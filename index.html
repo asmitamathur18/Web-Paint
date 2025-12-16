@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Paint</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <canvas id="canvas"></canvas>
+
+  <div class="toolbar">
+    <div class="colors">
+      <button class="color" style="background:black"></button>
+      <button class="color" style="background:red"></button>
+      <button class="color" style="background:orange"></button>
+      <button class="color" style="background:yellow"></button>
+      <button class="color" style="background:green"></button>
+      <button class="color" style="background:blue"></button>
+      <button class="color" style="background:purple"></button>
+      <button class="color" style="background:white"></button>
+    </div>
+
+    <div class="tools">
+      <label>Brush</label>
+      <input type="range" id="size" min="1" max="30" value="5">
+      <button id="eraser">Eraser</button>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button id="clear" class="clear">CLEAR</button>
+    <button id="save" class="save">SAVE</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
